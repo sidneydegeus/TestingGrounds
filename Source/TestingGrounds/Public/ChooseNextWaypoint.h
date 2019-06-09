@@ -19,7 +19,12 @@ class TESTINGGROUNDS_API UChooseNextWaypoint : public UBTTaskNode
 // Variables
 protected:
 	UPROPERTY(EditAnywhere, Category = "Blackboard")
-		struct FBlackboardKeySelector index;
+		struct FBlackboardKeySelector IndexKey;
+
+	UPROPERTY(EditAnywhere, Category = "Blackboard")
+		struct FBlackboardKeySelector WaypointKey;
+
+	//TArray<UObject*> waypoints;
 
 // Functions:
 
